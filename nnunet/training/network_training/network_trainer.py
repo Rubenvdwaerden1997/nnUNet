@@ -526,8 +526,7 @@ class NetworkTrainer(object):
             self.print_to_log_file("done")
 
         #Saving specific checkpoints
-
-        if self.epoch == 2 or self.epoch == 4 or self.epoch == 6 or self.epoch == 8:
+        if self.epoch == 200 or self.epoch == 400 or self.epoch == 600 or self.epoch == 800:
             self.save_checkpoint(join(self.output_folder, "model_{}.model".format(self.epoch)))
             self.print_to_log_file("Epoch {}. Saving...".format(self.epoch))
 
