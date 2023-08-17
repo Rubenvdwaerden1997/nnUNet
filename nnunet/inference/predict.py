@@ -134,7 +134,7 @@ def predict_cases(model, list_of_lists, output_filenames, folds, save_npz, num_t
                   num_threads_nifti_save, segs_from_prev_stage=None, do_tta=True, mixed_precision=True,
                   overwrite_existing=False,
                   all_in_gpu=False, step_size=0.5, checkpoint_name="model_final_checkpoint",
-                  segmentation_export_kwargs: dict = None, disable_postprocessing: bool = False):
+                  segmentation_export_kwargs: dict = None, disable_postprocessing: bool = True):
     """
     :param segmentation_export_kwargs:
     :param model: folder where the model is saved, must contain fold_x subfolders
